@@ -36,13 +36,13 @@
         </div>
       </div>
       <div class="sign-in_box">
-        <form action="php/signUp.php" method="post" id="sign_up_form">
+        <form action="join_us/php/signUp.php" method="post" id="sign_up_form">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="usernameDiv">
-            <input class="mdl-textfield__input" type="text" id="username" name="email">
+            <input class="mdl-textfield__input" type="email" id="username" name="email">
             <label class="mdl-textfield__label" for="username" id="usernameLabel">Email<span class="imp"> *</span></label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="passwordDiv">
-            <input class="mdl-textfield__input" type="email" id="password" name="name">
+            <input class="mdl-textfield__input" type="text" id="password" name="name">
             <label class="mdl-textfield__label" for="password" id="passwordLabel">Full Name<span class="imp"> *</span></label>
           </div>
           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" id="remember">
