@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="sign-in_box">
-        <form action="signUp.php" method="post" id="sign_up_form">
+        <form action="php/signUp.php" method="post" id="sign_up_form">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="usernameDiv">
             <input class="mdl-textfield__input" type="text" id="username" name="username">
             <label class="mdl-textfield__label" for="username" id="usernameLabel">Username<span class="imp"> *</span></label>
@@ -55,14 +55,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript">
-
-    $(document).ready(function(){
-        $('#sign_up_form').submit(function(){
-            $('body').addClass('everywhereActive');
-
-          return false;
-    })
-  });
 
   </script>
   </body>

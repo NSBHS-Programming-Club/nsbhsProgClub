@@ -1,0 +1,16 @@
+{
+  'members':{
+    'Edwin':{
+      'driveStatus':'Read/Write',
+      'github':'https://github.com/Eddyboy12',
+      'websiteAdmin':'1'
+    }
+  },
+  'admins':{
+    'Varun':{
+      'drive_satus':'Admin',
+      'github':'https://github.com/Varun-Sethu',
+      'websiteAdmin':'1'
+    }
+  }
+}
