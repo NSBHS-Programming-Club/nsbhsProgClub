@@ -64,10 +64,10 @@ body {
     text-align: center;
 }
 #usernameDiv {
-    top: 15%;
+    top: 10%;
 }
 #passwordDiv {
-    top: 35%;
+    top: 30%;
 }
 .sign-in-text {
     height: 30%;
@@ -106,7 +106,7 @@ body {
 #remember {
   width: 38%;
   position: absolute;
-  top: 55%;
+  top: 52%;
   left: 12%;
 }
 .everywhereActive {
