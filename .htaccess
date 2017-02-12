@@ -1,7 +1,9 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^([^\.]+)$ $1.php [NC,L]
+  #change properties during production
+    #RewriteCond %{HTTP_HOST} !^nsbhsprogclub/sign_up$ [NC]
+      #RewriteRule ^(.*)$ nsbhsprogclub/join_us/index [L,R=301]
 
 DirectoryIndex join_us/index.php
-
 IndexIgnore members.json
