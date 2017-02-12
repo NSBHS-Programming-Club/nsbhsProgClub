@@ -4,7 +4,7 @@
     $email = $_POST['email'];
 
     $userFile = fopen("../../members.json", 'w+') or die("Can not open members.json");
-      $jsonContetnt = file_get_contents("../members.json") or die("Can't open file");
+      $jsonContetnt = file_get_contents("../../../../members.json") or die("Can't open file");
         $jsonDB = json_decode($jsonContetnt, true);
           $members = &$jsonDB['members'];
             $members[$name] = array();
