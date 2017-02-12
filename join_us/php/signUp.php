@@ -30,7 +30,6 @@
     file_put_contents("../../members.json", " ") or die("Could not erase file");
       file_put_contents("../../members.json", json_encode($jsonDB)) or die("Could not write to file");
         fclose($userFile);
-      header('Location: ../completesignup');
     }else{
       die(header('Location: ../index.php'));
     }
