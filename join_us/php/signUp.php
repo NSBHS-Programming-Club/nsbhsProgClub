@@ -23,7 +23,7 @@
               $userInfo = array(
                 'email' => $email,
                 'websiteAdmin' => 'FALSE',
-                'driveStatu' => 'Read/Write'
+                'driveStatus' => 'Read/Write'
               );
               array_push($members[$name], $userInfo);
                 echo(json_encode($jsonDB));
