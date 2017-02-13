@@ -1,26 +1,39 @@
 <?php
-$overide == true;
-  if(isset($_POST['name']) && isset($_POST['email']) && $overide == $false){
+
+function file_get_contents_curl($url) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);       
+
+    $data = curl_exec($ch);
+    curl_close($ch);
+
+    return $data;
+}
+
+$overide == false;
+  if(isset($_POST['name']) && isset($_POST['email']) && $overide == false){
+    
     $name = $_POST['name'];
     $email = $_POST['email'];
-
-    $userFile = fopen("../../members.json", 'w+') or die("Can not open file");
-      ini_set('allow_url_fopen', '1');
-      $jsonContetnt = file_get_contents("../../members.json") or die(header('Location: ../completesignup'));
-        $jsonDB = json_decode($jsonContetnt, true);
-          $members = &$jsonDB['members'];
-            $members[$name] = array();
-              $userInfo = array(
-                'email' => $email,
-                'websiteAdmin' => 'FALSE',
-                'driveStatu' => 'Read/Write'
-              );
-              array_push($members[$name], $userInfo);
-                echo(json_encode($jsonDB));
-    file_put_contents("../../members.json", " ") or die("Could not erase file");
-      file_put_contents("../../members.json", json_encode($jsonDB)) or die("Could not write to file");
-        fclose($userFile);
-      header('Location: ../completesignup');
+    
+      $jsonContetnt = file_get_contents_curl("https://nsbhs-prog-club-vurnator-1.c9users.io/members.json");
+        $jsonDecoded = json_decode($jsonContetnt, true);
+          $members = &$jsonDecoded['members'];
+          
+          $members[$name] = array();
+            $userArray = array(
+              'email' => $email,
+              'websiteAdmin' => 'FALSE',
+              'driveStatu' => 'Read/Write'
+            );
+            
+          array_push($members[$name], $userArray);
+             file_put_contents("../../members.json", json_encode($jsonDecoded)) or die("Could not write to file");
+              header('Location: ../completesignup');
     }else{
       die(header('Location: ../completesignup'));
     }
