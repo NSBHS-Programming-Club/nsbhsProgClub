@@ -115,3 +115,52 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
+@media only screen and (max-width: 800px) {
+    .sign-in_box {
+        width: 60%;
+        left: 20%;
+    }
+    
+    .text {
+        font-size: 4vw;
+    }
+    
+    #remember {
+        top: 54%;    
+    }
+    
+    .detail {
+        font-size: 2.5vw;
+    }
+}
+@media only screen and (max-width: 640px) {
+    #remember {
+        visibility: hidden;
+    }
+    
+    .sign-in_box {
+        width: 80%;
+        height: 50%;
+        position: absolute;
+        left: 10%;
+    }
+    
+    .text {
+        font-size: 8vw;   
+    }
+    
+    .detail {
+        font-size: 4vw;
+    }
+    
+    .sign-in-text {
+        top: 20%;
+    }
+    
+    .aboutText {
+        top: 35%;
+    }
+    #sign-up {
+        bottom: 15%;
+    }
+}

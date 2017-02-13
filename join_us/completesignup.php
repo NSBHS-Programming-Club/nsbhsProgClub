@@ -17,7 +17,7 @@
       <!-- inline styling for days -->
       <style media="screen">
         body{
-          background-color: #f57c00;
+          background-color: #03A9F4;
           position: absolute;
           top: 0%;
           left: 0%;
