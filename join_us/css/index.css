@@ -115,7 +115,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
     .sign-in_box {
         width: 60%;
         left: 20%;
@@ -166,5 +166,20 @@ body {
     }
     #passwordDiv {
        top: 35%; 
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 700px) {
+    .sign-in_box {
+         height: 65%;   
+    }
+    .sign-in-text {
+        font-size: 2vw;
+    }
+    .text {
+        font-size: 6.5vw;
+    }
+    .aboutText {
+        top: 47%;
     }
 }
