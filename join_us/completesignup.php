@@ -15,30 +15,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <!-- inline styling for days -->
-      <style media="screen">
-        body{
-          background-color: #03A9F4;
-          position: absolute;
-          top: 0%;
-          left: 0%;
-        }
-        .demo-card-wide.mdl-card {
-          width: 512px;
-        }
-        .demo-card-wide > .mdl-card__title {
-          color: #fff;
-          height: 176px;
-          background: url('img/background.png ') center / cover;
-        }
-        .demo-card-wide > .mdl-card__menu {
-          color: #fff;
-        }
-        #container {
-          position: absolute;
-          top: 23.703703703703703703703703703704%;
-          left: 30.80546875%;
-        }
-    </style>
+      <link rel="stylesheet" href="css/completeSignUp.css" />
     </head>
     <body>
 
@@ -56,9 +33,5 @@
               Connect To Drive
             </a>
         </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script type="text/javascript">
-
-        </script>
     </body>
   </html>
