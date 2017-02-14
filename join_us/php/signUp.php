@@ -14,8 +14,7 @@ function file_get_contents_curl($url) {
     return $data;
 }
 
-$overide == false;
-  if(isset($_POST['name']) && isset($_POST['email']) && $overide == false){
+  if(isset($_POST['name']) && isset($_POST['email'])){
     
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -35,6 +34,6 @@ $overide == false;
              file_put_contents("../../members.json", json_encode($jsonDecoded)) or die("Could not write to file");
               header('Location: ../completesignup');
     }else{
-      die(header('Location: ../completesignup'));
+      die(header('Location: ../index.php'));
     }
  ?>

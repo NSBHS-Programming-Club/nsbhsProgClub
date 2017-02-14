@@ -4,3 +4,5 @@ RewriteEngine On
 
 DirectoryIndex join_us/index.php
 IndexIgnore members.json
+
+ErrorDocument 404 /404.php
