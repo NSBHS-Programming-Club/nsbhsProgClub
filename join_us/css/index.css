@@ -115,7 +115,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2000;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     .sign-in_box {
         width: 60%;
         left: 20%;
@@ -140,7 +140,7 @@ body {
     
     .sign-in_box {
         width: 80%;
-        height: 50%;
+        height: 45%;
         position: absolute;
         left: 10%;
     }
@@ -154,13 +154,17 @@ body {
     }
     
     .sign-in-text {
-        top: 20%;
+        top: 30%;
     }
     
     .aboutText {
-        top: 35%;
+        top: 45%;
     }
     #sign-up {
         bottom: 15%;
+        height: 15%;
+    }
+    #passwordDiv {
+       top: 35%; 
     }
 }
