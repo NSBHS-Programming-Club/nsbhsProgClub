@@ -19,7 +19,7 @@ function file_get_contents_curl($url) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     
-      $jsonContetnt = file_get_contents_curl("https://nsbhs-prog-club-vurnator-1.c9users.io/members.json");
+      $jsonContetnt = file_get_contents_curl("https://vast-mesa-54350.herokuapp.com/members.json");
         $jsonDecoded = json_decode($jsonContetnt, true);
           $members = &$jsonDecoded['members'];
           
