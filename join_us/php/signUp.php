@@ -32,7 +32,7 @@ function file_get_contents_curl($url) {
             
           array_push($members[$name], $userArray);
              file_put_contents("../../members.json", json_encode($jsonDecoded)) or die("Could not write to file");
-              header('Location: ../index.php');
+              header('Location: http://vast-mesa-54350.herokuapp.com');
     }else{
       die(header('Location: ../index.php'));
     }
