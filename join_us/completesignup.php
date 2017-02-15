@@ -29,7 +29,7 @@
         </div>
 
         <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://drive.google.com/open?id=0B1euS_2ZQSvtMDRQaW43SklyQmM">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://drive.google.com/drive/folders/0B1euS_2ZQSvtMDRQaW43SklyQmM?usp=sharing">
               Connect To Drive
             </a>
         </div>

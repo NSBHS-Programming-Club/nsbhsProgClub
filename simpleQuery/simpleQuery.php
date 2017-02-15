@@ -47,7 +47,9 @@ function file_get_contents_curl($url) {
                         if(isset($valueArray[2])){
                           $thirdWord = $valueArray[2];
                         } else {
-                            file_get_contents("https://vast-mesa-54350.herokuapp.com/members.json")
+                            $data = file_get_contents_curl("https://vast-mesa-54350.herokuapp.com/members.json");
+                            
+                            return $data;
                         }
                     }
                 }
