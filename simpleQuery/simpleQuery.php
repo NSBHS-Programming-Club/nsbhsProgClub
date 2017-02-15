@@ -46,6 +46,11 @@ function file_get_contents_curl($url) {
                     if($secondWord == "*"){
                         if(isset($valueArray[2])){
                           $thirdWord = $valueArray[2];
+                            if($thirdWord == "WHERE" || $thirdWord == "where") {
+                                $inputField = $valueArray[3];
+                                $equals = $valueArray[4];
+                                $value = $valueArray[5];
+                            }
                         }else {
                             $data = file_get_contents_curl("https://vast-mesa-54350.herokuapp.com/members.json");
                             return $data;

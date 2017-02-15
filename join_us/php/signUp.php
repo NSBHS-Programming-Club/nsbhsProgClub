@@ -27,12 +27,12 @@ function file_get_contents_curl($url) {
             $userArray = array(
               'email' => $email,
               'websiteAdmin' => 'FALSE',
-              'driveStatu' => 'Read/Write'
+              'driveStatus' => 'Not Connected'
             );
             
           array_push($members[$name], $userArray);
              file_put_contents("../../members.json", json_encode($jsonDecoded)) or die("Could not write to file");
-              header('Location: ../completesignup');
+              header('Location: ../index.php');
     }else{
       die(header('Location: ../index.php'));
     }
