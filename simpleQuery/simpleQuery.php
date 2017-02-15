@@ -46,9 +46,8 @@ function file_get_contents_curl($url) {
                     if($secondWord == "*"){
                         if(isset($valueArray[2])){
                           $thirdWord = $valueArray[2];
-                        } else {
+                        }else {
                             $data = file_get_contents_curl("https://vast-mesa-54350.herokuapp.com/members.json");
-                            
                             return $data;
                         }
                     }
