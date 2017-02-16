@@ -5,7 +5,7 @@
       <title>Complete Registration | NSBHS ProgClub</title>
       <meta name="viewport" content="width=device-width" initial-scale="1.0">
       <meta charset="utf-8">
-      <meta name="description:" content="A beta for the myNSB Android app">
+      <meta name="description:" content="NSBHS PRog CLub">
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <!-- MDL stuff because im a lazy peice of tomato that cant be bothered doing this stuff by hand so I seek assistance from our lord and saviour Google Inc.
       :) -->
