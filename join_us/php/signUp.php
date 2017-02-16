@@ -27,12 +27,13 @@ function file_get_contents_curl($url) {
             $userArray = array(
               'email' => $email,
               'websiteAdmin' => 'FALSE',
-              'driveStatus' => 'Not Connected'
+              'driveStatus' => 'Not Connected',
+              'Year' => '9'
             );
             
           array_push($members[$name], $userArray);
              file_put_contents("../../members.json", json_encode($jsonDecoded)) or die("Could not write to file");
-              header('Location: http://vast-mesa-54350.herokuapp.com');
+              header('Location: https://nsbhs-prog-club-vurnator-1.c9users.io');
     }else{
       die(header('Location: ../index.php'));
     }
