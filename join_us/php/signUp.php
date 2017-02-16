@@ -28,7 +28,7 @@ function file_get_contents_curl($url) {
               'email' => $email,
               'websiteAdmin' => 'FALSE',
               'driveStatus' => 'Not Connected',
-              'Year' => '9'
+              'Year' => '7'
             );
             
           array_push($members[$name], $userArray);
