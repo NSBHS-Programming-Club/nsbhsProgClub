@@ -1,6 +1,6 @@
 # SimpleQuery
 
-Use SQL-like syntax to query our your JOSN database.
+Use SQL-like syntax to query our your JSON database.
 
 ### How to use
 
